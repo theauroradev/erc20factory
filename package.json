@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "clean": "rm -rf build",
+    "compile": "yarn clean && truffle compile",
+    "deploy:local": "truffle deploy development"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.4.2",
+    "dotenv": "^16.0.0",
+    "ethers": "^5.5.4",
+    "truffle-hdwallet-provider": "^1.0.17",
+    "web3-provider-engine": "^16.0.3"
+  }
+}
