@@ -18,8 +18,8 @@ contract ERC20Token is AccessControlEnumerable, ERC20 {
     require(cap_ > 0, "ERC20Capped: cap is 0");
     _cap = cap_;
 
-    _setupRole(DEFAULT_ADMIN_ROLE, _msgSender());
-    _setupRole(MINTER_ROLE, _msgSender());
+    _setupRole(DEFAULT_ADMIN_ROLE, tx.origin);
+    _setupRole(MINTER_ROLE, tx.origin);
   }
 
   function cap() public view virtual returns (uint256) {

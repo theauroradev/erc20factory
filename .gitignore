@@ -7,3 +7,5 @@ yarn.lock
 
 ./frontend/src/contractdetails/ERC20Factory.json
 ./frontend/src/contractdetails/ERC20Token.json
+
+hardhat
